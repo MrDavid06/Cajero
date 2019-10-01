@@ -16,7 +16,8 @@ public class Cajero {
         System.out.print("--------");
         System.out.print(" Bienvenido ");
         System.out.println("--------");
-        
+        Login.Login();
+        System.out.println("");
         System.out.println("Por favor seleccione una opcion");
         System.out.println("    1.Consulta de Saldo");
         System.out.println("    2.Retiro de efectivo");
