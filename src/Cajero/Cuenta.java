@@ -6,11 +6,23 @@ package Cajero;
  * and open the template in the editor.
  */
 
-
 /**
  *
  * @author DELL
  */
 public class Cuenta {
+    private String creditCard;
+    private int password;
+    public int balance;
     
+    public void withdraw(){
+        System.out.println("");
+    }
+    
+    public void viewBalance(){
+        }
+    
+    public void depositMoney(){
+    
+    }
 }

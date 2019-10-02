@@ -1,13 +1,17 @@
 package Cajero;
 import java.util.Scanner;
 
+/**
+ *
+ * @author DELL
+ */
 public class Login {
-    
-    public static void Login(){
-        int holaquehace;
-        int bandera = 0;
-        int seleccion = 0;
-        int password = 5678; 
+     int bandera = 0;
+     int seleccion = 0;
+     int password = 5678;  
+   
+        public void loguear(){
+
         
         Scanner account = new Scanner (System.in);
         Scanner pass = new Scanner (System.in);
@@ -20,8 +24,8 @@ public class Login {
         
 
         
-        do{
-            if(seleccion >= 1 && seleccion <=4){
+        while (bandera == 0) {
+        if(seleccion >= 1 && seleccion <=4){
             bandera = 1;
         
         } else {
@@ -29,9 +33,8 @@ public class Login {
             System.out.println("Opcion no disponible. Intente de nuevo por favor");
             System.out.println("------------------------------------------------");
         }
-        
-        }while (bandera == 0);
+     }
                 
-    }
+   }
     
 }
