@@ -7,6 +7,7 @@ public class Login {
    
         int bandera = 0;
         int seleccion = 0;
+        int password1 = 0;
         int password = 5678; 
         int cuenta = 59852245;
         int cuentaB = 0;
@@ -22,29 +23,17 @@ public class Login {
         
         if (cuenta == cuenta){
            System.out.println("Ingrese su contraseña");
-        String userA = pass.nextLine();
+        password1 = pass.nextInt();
         
         } else {
             System.out.println("La cuenta no es valida");
         String userA = pass.nextLine();
         
-    
-    }
-        if (password == password) {
-            System.out.println("Bienvenido al Banco ABC");
-            
-        } else {
             System.out.println("Contraseña incorrecta");
         } 
-        do{
-            System.out.println("Ingrese su contraseña");
-            
-            
-        } while (pass) {
         
-    }
             
-        }
+  }
 }
             
             
