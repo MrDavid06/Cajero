@@ -1,40 +1,54 @@
 package Cajero;
 import java.util.Scanner;
 
-/**
- *
- * @author DELL
- */
 public class Login {
-     int bandera = 0;
-     int seleccion = 0;
-     int password = 5678;  
+    
+    public static void Login(){
    
-        public void loguear(){
-
+        int bandera = 0;
+        int seleccion = 0;
+        int password = 5678; 
+        int cuenta = 59852245;
+        int cuentaB = 0;
+        int lectorCuenta= 0;
+        
         
         Scanner account = new Scanner (System.in);
         Scanner pass = new Scanner (System.in);
-        
         System.out.println("Ingrese su numero de cuenta");
         String user = account.nextLine();
         System.out.println("");
-        System.out.println("Ingrese su contraseña");
         
         
-
-        
-        while (bandera == 0) {
-        if(seleccion >= 1 && seleccion <=4){
-            bandera = 1;
+        if (cuenta == cuenta){
+           System.out.println("Ingrese su contraseña");
+        String userA = pass.nextLine();
         
         } else {
-            System.out.println("------------------------------------------------");
-            System.out.println("Opcion no disponible. Intente de nuevo por favor");
-            System.out.println("------------------------------------------------");
-        }
-     }
-                
-   }
+            System.out.println("La cuenta no es valida");
+        String userA = pass.nextLine();
+        
     
+    }
+        if (password == password) {
+            System.out.println("Bienvenido al Banco ABC");
+            
+        } else {
+            System.out.println("Contraseña incorrecta");
+        } 
+        do{
+            System.out.println("Ingrese su contraseña");
+            
+            
+        } while (pass) {
+        
+    }
+            
+        }
 }
+            
+            
+       
+                
+                
+            
