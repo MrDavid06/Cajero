@@ -43,4 +43,41 @@ public class Cuenta {
         System.out.println("¿Cuánto dinero quiere depositar?");
         balance = sc.nextInt();
     }
+    
+    public void changePassword(){
+        Scanner pw = new Scanner (System.in);
+        Scanner np = new Scanner(System.in);
+        int password = 5678;
+        int userpwd;
+        int newpass;
+        int newpass1;
+        
+        System.out.println("Escriba su contraseña anterior:");
+            userpwd = pw.nextInt();
+            
+            while (userpwd != password) {
+                System.out.println("Contraseña incorrecta");
+                System.out.println("-----------------------------------------------");
+                System.out.println("Escriba su contraseña anterior:");
+                userpwd = pw.nextInt();
+            }
+                
+        System.out.println("");
+        
+        System.out.println("Escriba su contraseña nueva");
+            newpass = np.nextInt();
+        System.out.println("");
+        
+        System.out.println("Confirme su contraseña");
+            newpass1 = np.nextInt();
+            
+            while (newpass1 != newpass) {
+                System.out.println("Contraseñas no coinciden");
+                System.out.println("-----------------------------------------------");
+                System.out.println("Confirme su contraseña");
+                newpass1 = np.nextInt();
+            }
+            System.out.println("------------------------------");
+            System.out.println("Contraseña cambiada exitosamente!");
+    }
 }

@@ -15,6 +15,15 @@ import java.util.Scanner;
 public class Cajero {
     
     public static void main(String[] args) {
+            Login lg1 = new Login();
+            Cuenta cnt1 = new Cuenta();
+            Cajero cj1 = new Cajero();
+            
+            lg1.Login();
+            cj1.menu();
+        }
+    
+        public void menu (){
         Cliente cli1 = new Cliente();
         Login lg1 = new Login();
         Cuenta cnt1 = new Cuenta();
@@ -24,7 +33,6 @@ public class Cajero {
         int selection;
         String transact;
         
-        
         System.out.print("--------");
         System.out.print(" Bienvenido ");
         System.out.println("--------");
@@ -33,10 +41,11 @@ public class Cajero {
         System.out.println("    1.Consulta de Saldo");
         System.out.println("    2.Retiro de efectivo");
         System.out.println("    3.Deposito de efectivo");
-        System.out.println("    4.Salir");
+        System.out.println("    4.Cambiar contraseña");
+        System.out.println("    5.Salir");
         selection = option.nextInt();
         
-        while (selection == 0 || selection >=5){
+        while (selection == 0 || selection >=6){
         System.out.print("--------------------------");
         System.out.print("ERROR");
         System.out.println("--------------------------");
@@ -44,7 +53,8 @@ public class Cajero {
         System.out.println("    1.Consulta de Saldo");
         System.out.println("    2.Retiro de efectivo");
         System.out.println("    3.Deposito de efectivo");
-        System.out.println("    4.Salir");
+        System.out.println("    4.Cambiar contraseña");
+        System.out.println("    5.Salir");
         selection = option.nextInt();
             }
         
@@ -58,24 +68,35 @@ public class Cajero {
             cnt1.depositMoney();
         }
         else if (selection == 4){
-            System.exit(selection);
+            cnt1.changePassword();
             }
-        
+        else if (selection == 5) {
+            System.out.println("Ha salido exitosamente!");
+            System.exit(0);
+        }
+                
             System.out.println("");
             System.out.println("------------------------------");
             System.out.println("¿Desea hacer algo más? S/N");
-            transact = option1.nextLine();
+            transact = option1.next();
             System.out.println("------------------------------");
             
-                if (transact == "S" || transact == "s") {    
+            if (transact == "S" || transact == "s") {    
                 System.out.println("Por favor seleccione una opcion");
                 System.out.println("    1.Consulta de Saldo");
                 System.out.println("    2.Retiro de efectivo");
                 System.out.println("    3.Deposito de efectivo");
                 System.out.println("    4.Salir");
                 selection = option.nextInt();
-            }
+                }
+                else if (transact == "N" || transact == "n") {
+                    System.out.println("Gracias por preferirnos! :D");
+                    System.exit(0);
+                }
+                else {
+                System.out.println("Opción no válida");
+                }
+          }
         }
-    }
               
  
