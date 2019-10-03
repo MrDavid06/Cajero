@@ -71,7 +71,8 @@ public class Cajero {
             cnt1.changePassword();
             }
         else if (selection == 5) {
-            System.exit(selection);
+            System.out.println("Ha salido exitosamente!");
+            System.exit(0);
         }
                 
             System.out.println("");
