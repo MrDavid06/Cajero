@@ -36,7 +36,7 @@ public class Logout {
     }
     
     else if (elec == 2){
-        System.out.println("Se ha cancelado cerrar la sesión");
+        System.out.println("Se ha cancelado cerrar la sesión!");
     }
     }
 }
