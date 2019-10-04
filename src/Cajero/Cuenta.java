@@ -24,24 +24,27 @@ public class Cuenta {
     public void withdraw(){
         System.out.println("¿Cuánto dinero desea retirar?");
         retiro = sc.nextInt();
+        
+        if (retiro <= balance){
         System.out.println("------------------------------");
         System.out.println("Su balance actual es igual a "+balance);     
         System.out.println("------------------------------");
+        }
+        else if (retiro > balance) {
+            System.out.print("------------------------------");
+            System.out.print("Error");
+            System.out.println("------------------------------");
+            System.out.println("------------------------------");
+            System.out.println("Balance insuficiente");
+            System.out.println("------------------------------");
+        }
       }
     
     public void viewBalance(){
       balance = 0;
-      if (balance == 0){
           System.out.println("------------------------------");
           System.out.println("Su balance actual es igual a "+balance);
           System.out.println("------------------------------");
-      }
-      
-          else{
-            System.out.println("------------------------------");
-            System.out.println("Su balance actual es igual a "+balance);     
-            System.out.println("------------------------------");
-            }
         }
     
     public void depositMoney(){
