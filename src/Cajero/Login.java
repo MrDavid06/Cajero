@@ -3,7 +3,8 @@ import java.util.Scanner;
 
 public class Login {
     public int password = 5678; 
-    public void Login(){
+    
+    public void login(){
         int password1 = 0;
         
         int intento = 0;

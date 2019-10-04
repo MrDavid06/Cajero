@@ -19,7 +19,7 @@ public class Cajero {
             Cuenta cnt1 = new Cuenta();
             Menu menuC= new Menu();
             
-            lg1.Login();
+            lg1.login();
             menuC.menu();
         }
     
