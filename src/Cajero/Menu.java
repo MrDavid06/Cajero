@@ -27,7 +27,7 @@ public class Menu {
             int Sign;
             /*--------------------------------------------------------------------------------------*/
 
-            /*Aquí empieza el Cajero en sí*/
+            /*Aquí empieza el menú del cajero en sí*/
             System.out.print("--------");
             System.out.print(" Bienvenido a CajeroATM");
             System.out.println("--------");
@@ -169,9 +169,6 @@ public class Menu {
                 System.out.println("Ha salido exitosamente!");
                 System.exit(0);
               break;
-              
-              default:
-              System.out.println("Opción incorrecta");
               }
         }
 }
