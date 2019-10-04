@@ -2,16 +2,10 @@ package Cajero;
 import java.util.Scanner;
 
 public class Login {
-    
-    public static void Login(){
-   
-        int bandera = 0;
-        int seleccion = 0;
+    public int password = 5678; 
+    public void Login(){
         int password1 = 0;
-        int password = 5678; 
-        int cuenta = 59852245;
-        int cuentaB = 0;
-        int lectorCuenta= 0;
+        
         int intento = 0;
         
         Scanner account = new Scanner (System.in);

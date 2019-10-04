@@ -22,7 +22,7 @@ public class Logout {
         System.out.println("    1. Si");
         System.out.println("    2. No");
         
-     while (elec == 0 || elec >=5){
+     while (elec == 0 || elec >=3){
         System.out.print("--------------------------");
         System.out.print("ERROR");
         System.out.println("--------------------------");
@@ -36,7 +36,7 @@ public class Logout {
     }
     
     else if (elec == 2){
-        System.out.println("Se ha cancelado cerrar la sesión!");
+        System.out.println("Usted canceló el cierre de sesión!");
     }
     }
 }

@@ -17,11 +17,16 @@ public class Cuenta {
     private String creditCard;
     private int password;
     public int balance;
+    int retiro;
+    int total;
     Scanner sc = new Scanner(System.in);
     
     public void withdraw(){
         System.out.println("¿Cuánto dinero desea retirar?");
-        
+        retiro = sc.nextInt();
+        System.out.println("------------------------------");
+        System.out.println("Su balance actual es igual a "+balance);     
+        System.out.println("------------------------------");
       }
     
     public void viewBalance(){
@@ -41,7 +46,11 @@ public class Cuenta {
     
     public void depositMoney(){
         System.out.println("¿Cuánto dinero quiere depositar?");
-        balance = sc.nextInt();
+        retiro = sc.nextInt();
+        System.out.println("------------------------------");
+        System.out.println("Su balance actual es igual a "+total);     
+        System.out.println("------------------------------");
+        
     }
     
     public void changePassword(){
@@ -79,5 +88,9 @@ public class Cuenta {
             }
             System.out.println("------------------------------");
             System.out.println("Contraseña cambiada exitosamente!");
+    }
+    
+    public void setTotal(int Total){
+        this.total = balance-retiro;
     }
 }
